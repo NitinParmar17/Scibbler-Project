@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles\header.css" rel="stylesheet" type="text/css" />
+    <link href="styles\index.css" rel="stylesheet" type="text/css" />
+    <link href="styles\font.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="main-container-div">
+      <div class="header">
+        <!-- HEADER PART -->
+
+        <div class="signB">
+          <button class="btn" id="si">Sign In</button>
+          <button class="btn" id="su">Sign Up</button>
+        </div>
+
+        <div class="heading1">ScriBBler</div>
+        <div class="heading2">Explore. Imagine. Create</div>
+      </div>
+
+      <div class="postButtons">
+        <button
+          class="btn1"
+          id="allp"
+          onclick="window.location.href='html/bloglist.html'"
+        >
+          <b>All Posts</b>
+        </button>
+
+        <button class="btn1" id="createp"><b>Create Post</b></button>
+      </div>
+    </div>
+
+    <!-- Sign In modal  -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 id="head1">Welcome Back!</h1>
+
+        <form>
+          <h3 class="sh6">Username</h3>
+          <input type="text" placeholder="Enter Username" required />
+          <h3 class="sh6">Password</h3>
+          <input type="password" placeholder="Enter Password" required />
+          <br />
+          <br />
+          <button id="sub1">Sign In</button><br />
+          <br />
+
+          <div id="nm">Not a member? <span id="redirect">Sign Up</span></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign Up modal -->
+    <div id="myModal1" class="modal1">
+      <!-- Modal content -->
+      <div class="modal-content1">
+        <span class="close1">&times;</span>
+        <h1 id="head1">Get Started</h1>
+
+        <form>
+          <h3 class="sh6">Full Name</h3>
+          <input type="text" placeholder="Enter Full Name" required />
+          <h3 class="sh6">Username</h3>
+          <input type="text" placeholder="Enter Username" required />
+          <h3 class="sh6">Password</h3>
+          <input type="password" placeholder="Enter Password" required />
+          <h3 class="sh6">Confirm Password</h3>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            required
+          /><br />
+          <br />
+          <button id="sub1">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Post modal -->
+    <div id="myModal2" class="modal2">
+      <div class="modal-content2">
+        <span class="close2">&times;</span>
+        <h1 id="head1">Pen Your Post</h1>
+
+        <form>
+          <br />
+
+          <span id="head1">Title:</span><br />
+          <input type="textbox" id="title1" />
+          <br /><br />
+
+          <span id="head1">Content:</span><br />
+          <input type="textbox" id="content" />
+          <button id="sub2">Create</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts\header.js"></script>
+    <script src="scripts\index.js"></script>
+  </body>
+</html>
